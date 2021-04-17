@@ -17,6 +17,17 @@
 Untuk menggunakan API anda dapat meng-clone repository atau dapat men-download file berupa zip.
 ###### `git clone https://github.com/rizalkhisyam/REST-API.git`
 
+##### Setting .env
+Setelah file project didownload atau diclone, copy file .env.example file dan rename file tersebut menjadi .env saja. Buat database dan koneksikan database yang anda buat pada file .env.
+
+`DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=(---isi dengan database yang anda buat--)
+DB_USERNAME=root
+DB_PASSWORD=`
+
+
 <table>
   <tr>
     <th>Company</th>

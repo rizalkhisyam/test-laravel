@@ -1,5 +1,5 @@
-<h1>TEST LARAVEL</h1>
-
+<h1>Laravel 8 - REST API</h1>
+<p>API ini dibuat menggunakan framework laravel 8</p>
 <table>
   <tr>
     <th>Company</th>

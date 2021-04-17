@@ -1,5 +1,22 @@
 <h1>Laravel 8 - REST API</h1>
 <p>API ini dibuat menggunakan framework laravel 8</p>
+
+#### Berikut model pada API
+* Profile
+#### Berikut daftar end point pada API
+* end point insert list user
+* end point update list user
+* end point delete user
+* end point get all user
+* end point get user by id
+* end point bulk insert list user
+* end point bulk update list user
+* end point bulk delete user
+
+#### Langkah-langkah pemakaian
+Untuk menggunakan API anda dapat meng-clone repository atau dapat men-download file berupa zip.
+###### `git clone https://github.com/rizalkhisyam/REST-API.git`
+
 <table>
   <tr>
     <th>Company</th>

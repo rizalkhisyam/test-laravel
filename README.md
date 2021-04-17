@@ -17,7 +17,7 @@
 Untuk menggunakan API anda dapat meng-clone repository atau dapat men-download file berupa zip.
 ###### `git clone https://github.com/rizalkhisyam/REST-API.git`
 
-##### Setting .env
+##### 1. Setting .env
 Setelah file project didownload atau diclone, copy file .env.example file dan rename file tersebut menjadi .env saja. Buat database dan koneksikan database yang anda buat pada file .env.
 
 `DB_CONNECTION=mysql`<br>
@@ -27,41 +27,62 @@ Setelah file project didownload atau diclone, copy file .env.example file dan re
 `DB_USERNAME=root`<br>
 `DB_PASSWORD=`<br>
 
+##### 2. Composer Install
+Masuk ke directory project melalui terminal dan jalankan perintal pada terminal untuk menginstall compose package project
+`composer install`
+
+##### 3. Generate Key
+Pada .env file APP_KEY akan secara otomatis kosong, untuk mendapatkan APP_KEY yang baru masuk pada directory project dengan terminal lalu jalankan perintah berikut:
+`php artisan key:generate`
+
+##### 4. Run Migration
+Setelah database sudah sudah diubah, jalankan perintah migration untuk membuat table migrasi ke database dengan menjalankan perintah sebagai berikut:
+`php artisan migrate`
+
+#### Dokumentasi API end point
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Name</th>
+    <th>API Url</th>
+    <th>Method</th>
+    <th>Response</th>
+    <th>Body Params</th>
+    <th>Header Params</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>Insert</td>
+    <td>http://localhost:8000/api/post/create</td>
+    <td>POST</td>
+    <td>{
+    "message": "User baru berhasil ditambahkan",
+    "data": {
+        "username": "allain2247",
+        "email": "allain2337@gmail.com",
+        "password": "$2y$10$DpMiWgMDJurYePn1zNehBOtc5f7dxN2NLGIhV1EVq8T2M2xhQhv7S",
+        "first_name": "rizal",
+        "last_name": "khisyam",
+        "address": "bwi jl. 123",
+        "city": "banyuwangi",
+        "province": "jatim",
+        "country": "indonesia",
+        "updated_at": "2021-04-17T16:48:28.000000Z",
+        "created_at": "2021-04-17T16:48:28.000000Z",
+        "id": 16
+    }
+    }</td>
+   <td>{
+    "username" : "allain2247",
+    "email" : "allain2337@gmail.com",
+    "password": "poertu",
+    "first_name": "rizal",
+    "last_name": "khisyam",
+    "address": "bwi jl. 123",
+    "city": "banyuwangi",
+    "province": "jatim",
+    "country": "indonesia"
+}</td>
+   <td>application/json</td>
   </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
+  
 </table>

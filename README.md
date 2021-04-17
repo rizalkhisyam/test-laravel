@@ -20,12 +20,12 @@ Untuk menggunakan API anda dapat meng-clone repository atau dapat men-download f
 ##### Setting .env
 Setelah file project didownload atau diclone, copy file .env.example file dan rename file tersebut menjadi .env saja. Buat database dan koneksikan database yang anda buat pada file .env.
 
-`DB_CONNECTION=mysql`
-`DB_HOST=127.0.0.1`
-`DB_PORT=3306`
-`DB_DATABASE=(---isi dengan database yang anda buat--)`
-`DB_USERNAME=root`
-`DB_PASSWORD=`
+<p>DB_CONNECTION=mysql</p>
+<p>DB_HOST=127.0.0.1</p>
+<p>DB_PORT=3306</p>
+<p>DB_DATABASE=(---isi dengan database yang anda buat--)</p>
+<p>DB_USERNAME=root</p>
+<p>DB_PASSWORD=</p>
 
 
 <table>
